@@ -74,6 +74,7 @@
             <b>Current date/time :</b> <span id="time"></span><br />
         </p>
         <button type="button" onClick="displayInformation()">Display Information</button>
+        <button type="button" onClick="changeColor()">Change color</button>
     </div>
     <!---------------->
 
@@ -85,7 +86,7 @@
         // Step 1: Create Function to Change Title and rewrite h1 element to "Celebrate Michigan Football!"
 
         function changeTitle() {
-            document.title = "Celebrate Michigan Football!";
+         
             document.querySelector("h1").textContent = "Celebrate Michigan Football!";
         }
 
@@ -94,7 +95,10 @@
         console.log("Title and heading updated to celebrate Michigan Football!");
 
         //Step 3: style the background to color #003366
+        function changeColor() {
         document.body.style.backgroundColor = "#003366";
+
+        }
 
         // Step 4: Add the correct ID for the button, create an element 'p' and add a message "2023 Champions!" to p
         document.getElementById("addMessageButton").addEventListener("click", function () {
